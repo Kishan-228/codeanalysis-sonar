@@ -178,8 +178,9 @@ def main(env, app_name, bb_repo_url, bb_branch_name, bb_repo_name, local_tf_base
 
                 # Overriding app_name as per the core app mapping instead of taking the one got in main
                 for app_name in yaml_core_account_app_list:
-                    deploy_app(logger, bb_repo_url, bb_branch_name, bb_repo_name, upgrade_param, dry_run, local_bb_base, local_devops_base, cloud_prov, platform_nm, core_noncore_param, env, account, app_name, workspace_identifier, override_workspace_details, exec_code_base_type, build_config_dl, core_account_name='AEDL' )
-                
+                    if app_name == account_name:
+                       deploy_app(logger, bb_repo_url, bb_branch_name, bb_repo_name, upgrade_param, dry_run, local_bb_base, local_devops_base, cloud_prov, platform_nm, core_noncore_param, env, account, app_name, workspace_identifier, override_workspace_details, exec_code_base_type, build_config_dl, core_account_name='AEDL' )
+                       break
         else:
             core_noncore_param = "noncore"
             
