@@ -1,0 +1,50 @@
+Changed directory to /home/bmboagt/local_tf_base/core_edl_dvpssb
+11-Feb-2025 21:40:22	Already on 'develop'
+11-Feb-2025 21:40:22	Your branch is up to date with 'origin/develop'.
+11-Feb-2025 21:40:22	HEAD is now at 89e81eb Pull request #48: s3.tf edited online with Bitbucket
+11-Feb-2025 21:40:23	From ssh://bitbucket.elevancehealth.com:7999/aedl/core_edl_dvpssb
+11-Feb-2025 21:40:23	 * branch            develop    -> FETCH_HEAD
+11-Feb-2025 21:40:23	Already up to date.
+11-Feb-2025 21:40:23	Repo pull successful
+11-Feb-2025 21:40:23	Pulled the latest code from core_edl_dvpssb develop
+11-Feb-2025 21:40:23	Changed dir to /home/bmboagt/local_devops_base
+11-Feb-2025 21:40:23	total 0 drwxr-xr-x. 5 bmboagt bmboagt 121 Feb 11 21:31 eda_cicd_engine
+11-Feb-2025 21:40:23	Repo pull successful
+11-Feb-2025 21:40:23	Changed directory to /home/bmboagt/local_devops_base/eda_cicd_engine
+11-Feb-2025 21:40:23	Already on 'develop'
+11-Feb-2025 21:40:23	Your branch is up to date with 'origin/develop'.
+11-Feb-2025 21:40:23	HEAD is now at cda6d8a Pull request #2002: maintest.py edited online with Bitbucket
+11-Feb-2025 21:40:24	From ssh://bitbucket.anthem.com:7999/aedldevops/eda_cicd_engine
+11-Feb-2025 21:40:24	   cda6d8a..0450681  develop    -> origin/develop
+11-Feb-2025 21:40:24	   b8a54b2..8e4ee8c  feature/Initial_migration -> origin/feature/Initial_migration
+11-Feb-2025 21:40:24	Updating cda6d8a..0450681
+11-Feb-2025 21:40:24	Fast-forward
+11-Feb-2025 21:40:24	 maintest.py | 6 +++---
+11-Feb-2025 21:40:24	 1 file changed, 3 insertions(+), 3 deletions(-)
+11-Feb-2025 21:40:24	Pulled the latest code from eda_cicd_engine develop
+11-Feb-2025 21:40:24	Account Name = DNA1
+11-Feb-2025 21:40:24	python3 maintest.py --team_app_name EDL --environment dev --account_name DNA1 --local_tf_base /home/bmboagt/local_tf_base --local_devops_base /home/bmboagt/local_devops_base/eda_cicd_engine --workspace_identifier AWS_AEDL_CORE_EDL_DVPSSB_DEV_SLVR --bb_repo_url ssh://git@bitbucket.elevancehealth.com:7999/aedl/core_edl_dvpssb.git --bb_branch_name develop --bb_repo_name core_edl_dvpssb --dry_run false
+11-Feb-2025 21:40:24	Namespace(account_name='DNA1', bb_branch_name='develop', bb_repo_name='core_edl_dvpssb', bb_repo_url='ssh://git@bitbucket.elevancehealth.com:7999/aedl/core_edl_dvpssb.git', cloud_prov='aws', dry_run='false', environment='dev', exec_code_base_type='BB', local_devops_base='/home/bmboagt/local_devops_base/eda_cicd_engine', local_tf_base='/home/bmboagt/local_tf_base', override_workspace_name='', platform_nm='aedl', skip_deploy='N', team_app_name='EDL', terraform_deployment='Y', upgrade_tf='false', workspace_identifier='AWS_AEDL_CORE_EDL_DVPSSB_DEV_SLVR')
+11-Feb-2025 21:40:24	Environment name is: dev
+11-Feb-2025 21:40:24	Cloud provider name is: aws
+11-Feb-2025 21:40:24	Validating Workspace-Bitbucket mapping
+11-Feb-2025 21:40:24	Valid repo & workspace mapping. Continue with deployment.!
+11-Feb-2025 21:40:24	type of service: dvpssb
+11-Feb-2025 21:40:24	Parallel deployment
+11-Feb-2025 21:40:24	account name : DNA1 matched
+11-Feb-2025 21:40:24	check1: ['DNA1']
+11-Feb-2025 21:40:24	check2:EDL
+11-Feb-2025 21:40:24	app name : EDL matched
+11-Feb-2025 21:40:24	Traceback (most recent call last):
+11-Feb-2025 21:40:24	  File "maintest.py", line 285, in <module>
+11-Feb-2025 21:40:24	    main(args.environment, args.team_app_name, args.bb_repo_url, args.bb_branch_name, args.bb_repo_name, args.local_tf_base, args.local_devops_base, local_bb_base, args.workspace_identifier, args.override_workspace_name, args.skip_deploy, args.terraform_deployment, args.exec_code_base_type, args.dry_run, args.cloud_prov, args.platform_nm, args.account_name, upgrade_param)
+11-Feb-2025 21:40:24	  File "maintest.py", line 193, in main
+11-Feb-2025 21:40:24	    deploy_app(logger, bb_repo_url, bb_branch_name, bb_repo_name, upgrade_param, dry_run, local_bb_base, local_devops_base, cloud_prov, platform_nm, core_noncore_param, env, app_name, workspace_identifier, override_workspace_details, exec_code_base_type, build_config_dl, account_name, core_account_name='AEDL' )
+11-Feb-2025 21:40:24	TypeError: deploy_app() missing 1 required positional argument: 'account_name'
+11-Feb-2025 21:40:24	*********** Executed deployment Failed ***********
+11-Feb-2025 21:40:24	Failing task since return code of [/home/bmboagt/bamboo-agent-home/temp/940310618-1312228853-1332257327-ScriptBuildTask-16748658046708745107.sh] was 55 while expected 0
+11-Feb-2025 21:40:24	Finished task 'Deploy' with result: Failed
+11-Feb-2025 21:40:24	Finalising the build...
+11-Feb-2025 21:40:24	Stopping timer.
+11-Feb-2025 21:40:24	Build 940310618-1312228853-1332257327 completed.
+11-Feb-2025 16:40:23	Finished processing deployment result Deployment of 'dev_core_edl_dvpssb-70' on 'dev-core-dna1-edl-dvpssb'
